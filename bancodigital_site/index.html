@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank SM - Banco Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/9defc24e34f0476e9628fb2894589c9a.png" alt="Bank SM Logo">
+                
+            </div>
+            <div class="botao">
+             <button id="abrir-conta-btn" class="btn"  style="cursor: 
+            pointer;"           
+             onclick="showSection('login')">Abrir uma Conta</button>
+       
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+            <ul id="nav-links">
+                <li><a href="index.html" id="home" onclick="showSection('home')">Home</a></li>
+                <li><a href="sobre-nos.html" id="sobre-nos" onclick="showSection('sobre-nos')">Sobre Nós</a></li>
+                <li><a href="ajuda.html" id="ajuda" onclick="showSection('ajuda')">Ajuda</a></li>
+                <li id="conta-link" style="display: none;"><a href="conta.html" onclick="showSection('conta')">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section section-home">
+        <h1 id="welcome-title" class="typing-animation">Bem-vindo ao Bank SM</h1>
+
+        <p>Seu banco digital com segurança e praticidade.</p>
+        <button id="abrir-conta-btn" class="btn"  style="cursor: pointer;"           
+        onclick="showSection('login')">Abrir uma Conta</button>
+    </section>
+
+
+    <section id="login" class="section-login" style="display: none;">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p>Não tem uma conta? <a href="#" id="show-register">Cadastre-se</a></p>
+    </section>
+
+    <section id="register" class="section-login" style="display: none;">
+        <h2>Cadastro</h2>
+        <form id="register-form">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" required>
+            <label for="register-password">Senha:</label>
+            <input type="password" id="register-password" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="#" id="show-login">Entrar</a></p>
+    </section>
+   <!-- Elemento de animação -->
+   
+   
+   <div id="loader" class="loader">
+    <div class="spinner"></div>
+</div>
+
+
+
+    
+    
+    
+    
+
+    <section id="extra-section-1" class="section">
+        <div class="section-content">
+            <img src="img/celular-cartao-credito-1.webp" alt="Imagem 1">
+            <div>
+                <h2>Nossos Serviços</h2>
+                <p>Conheça os serviços inovadores que oferecemos para facilitar sua vida financeira.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="extra-section-2" class="section">
+        <div class="section-content">
+            <img src="img/9a7a53d0-c4df-11e9-a3c4-a3e9797d43ef.png" alt="Imagem 2">
+            <div>
+                <h2>Segurança</h2>
+                <p>Nosso compromisso com a segurança garante que suas informações estejam sempre protegidas.</p>
+            </div>
+        </div>
+    </section>
+  
+  
+  
+  
+    <section id="carousel-section" class="section">
+        <h2>Nossos Cartões</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/set-credit-cards-vector-mockups-600nw-1924406663.webp" alt="Cartão 1">
+                    <p>Cartão Gold</p>
+                </div>
+                <div class="carousel-item">
+                    <img  id="platinum"    src="img/download.jpeg" alt="Cartão 2">
+                    <p>Cartão Platinum</p>
+                </div>
+                <div class="carousel-item">
+                    <img  id="black" src ="img/images.jpeg" alt="Cartão 3">
+                    <p>Cartão Black</p>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    
+  
+          
+    
+   
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h4>Bank SM</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Conta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="#">Email: contato@banksm.com</a></li>
+                        <li><a href="#">Telefone: (11) 1234-5678</a></li>
+                        <li><a href="#">Endereço: Rua Exemplo, 123, São Paulo, SP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/facebook-icon.png" alt="Facebook"></a>
+                        <a href="#"><img src="img/twitter-icon.png" alt="Twitter"></a>
+                        <a href="#"><img src="img/instagram-icon.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bank SM. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+        
+ 
+
+  
+</body>
+</html>

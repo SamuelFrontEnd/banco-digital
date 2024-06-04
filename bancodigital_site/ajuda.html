@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda - Bank SM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+  
+  
+  
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/9defc24e34f0476e9628fb2894589c9a.png" 
+   alt="Bank SM Logo">
+               
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <ul id="nav-links">
+                <li><a href="index.html" id="home"   
+   onclick="showSection('home')">Home</a></li>
+                <li><a href="sobre-nos.html" id="sobre-nos" 
+   onclick="showSection('sobre-nos')">Sobre Nós</a>
+                </li>
+   
+                <li><a href="ajuda.html" id="ajuda" 
+   onclick="showSection('ajuda')">Ajuda</a></li>
+                <li id="conta-link" style="display: none;"><a 
+   href="conta.html" onclick="showSection('conta')
+   ">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+  
+  
+  <body>
+    
+
+    <section id="ajuda" class="section section-ajuda">
+        <div class="section-content">
+            <h2>Ajuda</h2>
+            <div class="faq">
+                <h3>Perguntas Frequentes</h3>
+                <div class="faq-item">
+                    <h4>Como faço para abrir uma conta?</h4>
+                    <p>Para abrir uma conta no Bank SM, basta clicar no botão "Abrir uma Conta" na página inicial e seguir as instruções.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Como posso entrar em contato com o suporte?</h4>
+                    <p>Você pode entrar em contato com nossa equipe de suporte através do formulário de contato em nossa página ou ligando para nosso número de suporte.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Como faço para redefinir minha senha?</h4>
+                    <p>Para redefinir sua senha, basta acessar a página de login e clicar em "Esqueci minha senha". Você receberá instruções por email.</p>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Entre em Contato</h3>
+                <p>Estamos aqui para ajudar! Se você tiver alguma dúvida ou problema, entre em contato conosco através do formulário abaixo ou ligue para o nosso suporte.</p>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" rows="4" required></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+  
+  
+
+  
+  
+  
+  
+  
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h4>Bank SM</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Conta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="#">Email: contato@banksm.com</
+    a></li>
+                        <li><a href="#">Telefone: (11) 1234-5678</
+    a></li>
+                        <li><a href="#">Endereço: Rua Exemplo, 123,
+    São Paulo, SP</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/facebook-icon.
+    png" alt="Facebook"></a>
+                        <a href="#"><img src="img/twitter-icon.png"
+    alt="Twitter"></a>
+                        <a href="#"><img src="img/instagram-icon.
+    png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bank SM. Todos os direitos 
+    reservados.</p>
+            </div>
+        </div>
+    </footer>
+        
+
+</body>
+</html>
