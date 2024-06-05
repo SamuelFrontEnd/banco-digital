@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const showLoginLink = document.getElementById("show-login");
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
-    const abrirContaBtn = document.getElementById("abrir-conta-btn");
-
+   
     function showSection(sectionId) {
         const sections = document.querySelectorAll("section");
         sections.forEach(section => {
@@ -88,11 +87,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (abrirContaBtn) {
-        abrirContaBtn.addEventListener("click", () => {
+    const abrirContaBtns = document.querySelectorAll("#abrir-conta-btn");
+    abrirContaBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
             showSection("login");
         });
-    }
+    });
 
     let currentSlide = 0;
 
@@ -109,8 +109,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const welcomeTitle = document.getElementById("welcome-title");
         welcomeTitle.classList.add("typing-animation");
     }, 1000);
-});
-document.addEventListener("DOMContentLoaded", () => {
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -122,10 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     observer.observe(document.querySelector('.cards-container'));
-});
 
-
-document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('.menu a');
     const sections = document.querySelectorAll('.sectionbar');
 
