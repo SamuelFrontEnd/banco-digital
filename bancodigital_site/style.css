@@ -43,7 +43,9 @@ header .logo {
 
 header .logo img {
    
-
+height: 50px;
+width:50px;
+border-radius: 100px;
 }
 
 header .logo span {
@@ -119,7 +121,7 @@ header ul li a:hover {
 .hamburger .bar {
     
     width: 25px;
-    height: 4px;
+    height: 3px;
     background-color: white;
     transition: transform 0.4s, opacity 0.4s;
     border: solid 1px black;
@@ -530,7 +532,9 @@ cursor: pointer;
 transition: background-color 0.3s ease;
 }
 
-
+.botao:hover{
+    background-color: #0044cc;
+}
 
 footer {
     background-color: white;
