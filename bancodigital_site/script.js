@@ -140,3 +140,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+// script.js
+
+document.addEventListener('DOMContentLoaded', () => {
+    const cards = document.querySelectorAll('.cards-baixo-sobrenois .cards');
+    let currentCardIndex = 0;
+
+    function updateCards() {
+        cards.forEach((card, index) => {
+            card.classList.remove('active');
+            if (index === currentCardIndex) {
+                card.classList.add('active');
+            }
+        });
+    }
+
+    function nextCard() {
+        currentCardIndex = (currentCardIndex + 1) % cards.length;
+        updateCards();
+    }
+
+    setInterval(nextCard, 3000); // Change card every 3 seconds
+    updateCards();
+});
